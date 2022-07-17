@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Case Study"
+include ':app'
+include ':core'
+include ':constants'
+include ':components'
+include ':games'
+include ':games:games-domain'
+include ':games:games-datasource'
+include ':games:games-datasource-test'
+include ':games:games-interactors'
+include ':games:ui-gamesList'
+include ':games:ui-gameDetail'
+
